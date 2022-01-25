@@ -1,0 +1,88 @@
+atID,attribute,quantity,avail,avg_sale,cheapest
+1,Beanie,44,9,349,350
+2,Choker,48,11,121,140
+3,Pilot Helmet,54,11,143,225
+4,Tiara,55,5,120,170
+5,Orange Side,68,15,116,109
+6,Buck Teeth,78,18,97,89
+7,Welding Goggles,86,13,95,88
+8,Pigtails,94,20,115,90
+9,Pink With Hat,95,13,154,139
+10,Top Hat,115,31,228,140
+11,Spots,124,20,89,70
+12,Rosy Cheeks,128,15,69,83
+13,Blonde Short,129,18,95,71
+14,Wild White Hair,136,22,17880,100
+15,Cowboy Hat,142,22,204,145
+16,Wild Blonde,144,14,100,90
+17,Straight Hair Blonde,144,30,69,81
+18,Big Beard,146,29,84,80
+19,Red Mohawk,147,14,78,73
+20,Half Shaved,147,16,95,88
+21,Blonde Bob,147,24,86,69
+22,Vampire Hair,147,26,83,74
+23,Clown Hair Green,148,31,83,88
+24,Straight Hair Dark,148,15,74,71
+25,Straight Hair,151,21,72,74
+26,Silver Chain,156,33,96,75
+27,Dark Hair,157,22,94,85
+28,Purple Hair,165,26,92,94
+29,Gold Chain,169,31,95,100
+30,Medical Mask,175,31,97,91
+31,Tassle Hat,178,23,85,73
+32,Fedora,186,32,93,85
+33,Police Cap,203,28,88,83
+34,Clown Nose,212,34,102,74
+35,Smile,238,43,107,82
+36,Cap Forward,254,39,98,86
+37,Hoodie,259,32,276,245
+38,Front Beard Dark,260,37,75,85
+39,Frown,261,47,94,74
+40,Purple Eye Shadow,262,29,87,70
+41,Handlebars,263,40,93,75
+42,Blue Eye Shadow,266,34,70,70
+43,Green Eye Shadow,271,37,84,70
+44,Vape,272,38,85,82
+45,Front Beard,273,43,77,74
+46,Chinstrap,282,40,83,74
+47,3D Glasses,286,51,165,109
+48,Luxurious Beard,286,46,122,78
+49,Mustache,288,38,73,73
+50,Normal Beard Black,289,42,99,90
+51,Normal Beard,292,33,87,74
+52,Eye Mask,293,31,78,74
+53,Goat,295,47,82,76
+54,Do-rag,300,31,75,75
+55,Shaved Head,300,40,70,74
+56,Muttonchops,303,35,80,79
+57,Peak Spike,303,42,78,74
+58,Pipe,317,56,103,92
+59,VR,332,56,102,84
+60,Cap,351,53,86,76
+61,Small Shades,378,52,99,83
+62,Clown Eyes Green,382,49,2430,70
+63,Clown Eyes Blue,384,54,89,69
+64,Headband,406,46,82,77
+65,Crazy Hair,414,55,87,69
+66,Knitted Cap,419,62,83,78
+67,Mohawk Dark,429,49,68,75
+68,Mohawk,441,53,66,69
+69,Mohawk Thin,441,59,68,69
+70,Frumpy Hair,442,48,75,68
+71,Wild Hair,447,56,93,75
+72,Messy Hair,460,47,78,70
+73,Eye Patch,461,68,78,76
+74,Stringy Hair,463,58,68,74
+75,Bandana,481,73,74,72
+76,Classic Shades,502,67,78,69
+77,Shadow Beard,526,63,92,90
+78,Regular Shades,527,86,87,72
+79,Horned Rim Glasses,535,72,83,72
+80,Big Shades,535,74,92,69
+81,Nerd Glasses,572,61,90,77
+82,Black Lipstick,617,82,1620,68
+83,Mole,644,89,79,69
+84,Purple Lipstick,655,87,81,70
+85,Hot Lipstick,696,89,66,69
+86,Cigarette,961,144,90,73
+87,Earring,2459,338,81,69
