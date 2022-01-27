@@ -1,0 +1,52 @@
+CREATE DATABASE `cryptopunks` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+
+CREATE TABLE `attributes` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` char(55) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=88 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `cryptopunk_has_attributes` (
+  `id_cryptopunk` int NOT NULL,
+  `id_attribute` int NOT NULL,
+  KEY `cp` (`id_cryptopunk`),
+  KEY `at` (`id_attribute`),
+  CONSTRAINT `at` FOREIGN KEY (`id_attribute`) REFERENCES `attributes` (`id`),
+  CONSTRAINT `cp` FOREIGN KEY (`id_cryptopunk`) REFERENCES `cryptopunks` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `cryptopunks` (
+  `id` int NOT NULL,
+  `owner` char(55) DEFAULT NULL,
+  `id_type` int NOT NULL,
+  `for_sale` tinyint(1) DEFAULT NULL,
+  `bids` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `cryptopunks_ibfk_1` (`id_type`),
+  CONSTRAINT `cryptopunks_ibfk_1` FOREIGN KEY (`id_type`) REFERENCES `types` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `transactions` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `id_cryptopunk` int NOT NULL,
+  `tr_type` char(55) DEFAULT NULL,
+  `tr_from` char(55) DEFAULT NULL,
+  `tr_to` char(55) DEFAULT NULL,
+  `amount` float(53,2) DEFAULT NULL,
+  `amount_dols` float(53,2) DEFAULT NULL,
+  `txn` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `transactions_ibfk_1` (`id_cryptopunk`),
+  CONSTRAINT `transactions_ibfk_1` FOREIGN KEY (`id_cryptopunk`) REFERENCES `cryptopunks` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9960 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `types` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` char(55) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
